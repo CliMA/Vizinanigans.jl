@@ -1,0 +1,7 @@
+name = "Vizinanigans"
+uuid = "2f2c87d3-e8c6-4009-b9a4-4d02d35874a4"
+authors = ["sandreza <andrenogueirasouza@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+GLMakie = "e9467ef8-e4e7-5192-8a1a-b1aee30e663a"
