@@ -1,5 +1,12 @@
 module Vizinanigans
 
-greet() = print("Hello World!")
+using GLMakie, Statistics, Printf
+
+
+include("utils.jl")
+include("./Cartesian/volumeslice.jl")
+include("./Cartesian/visualize.jl")
+
+
 
 end # module
