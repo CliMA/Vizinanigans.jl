@@ -276,10 +276,7 @@ function visualize(
         quantile($state[:], $lowerclim_node),
         quantile($state[:], $upperclim_node),
     ))
-    cmap_rgb = @lift(
-        $oclims[1] < $oclims[2] ? to_colormap($colornode) :
-        reverse(to_colormap($colornode))
-    )
+    cmap_rgb = colornode
     clims = @lift(
         $oclims[1] != $oclims[2] ? (minimum($oclims), maximum($oclims)) :
         (minimum($oclims) - 1, maximum($oclims) + 1)
@@ -350,7 +347,7 @@ function visualize(
     cbar.width = Relative(1 / 3)
     cbar.height = Relative(5 / 6)
     cbar.halign = :center
-    cbar.flipaxisposition = true
+    # cbar.flipaxisposition = true
     # cbar.labelpadding = -350
     cbar.labelsize = 50
 
