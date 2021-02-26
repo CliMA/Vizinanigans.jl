@@ -1,4 +1,5 @@
 using Test
+using Printf
 using Vizinanigans
 
 function run_script(filepath)
