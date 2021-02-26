@@ -22,14 +22,14 @@ end
 
 @testset "Vizinanigans" begin
     @testset "2D" begin
-        @test run_script(joinpath(@__FILE__, "..", "examples", "visualize_2D.jl"))
+        @test run_script(joinpath(@__DIR__, "..", "examples", "visualize_2D.jl"))
     end
 
     @testset "3D" begin
-        @test run_script(joinpath(@__FILE__, "..", "examples", "visualize_3D.jl"))
+        @test run_script(joinpath(@__DIR__, "..", "examples", "visualize_3D.jl"))
     end
 
     @testset "Volume slices" begin
-        @test run_script(joinpath(@__FILE__, "..", "examples", "volumeslice.jl"))
+        @test run_script(joinpath(@__DIR__, "..", "examples", "volumeslice.jl"))
     end
 end
