@@ -1,4 +1,4 @@
-using Makie, GLMakie, GeometryBasics
+using GLMakie
 
 function cubedshellwarp(a, b, c, R = max(abs(a), abs(b), abs(c)))
 
@@ -52,7 +52,7 @@ b = [cubedshellwarp(a,b,c)[2] for (a,b,c) in zip(xa,xb,xc)]
 c = [cubedshellwarp(a,b,c)[3] for (a,b,c) in zip(xa,xb,xc)]
 
 
-sc = Scene(limits = HyperRectangle(Vec3f0(-2), Vec3f0(2)))
+sc = Scene()
 
 wireframe!(sc,
            a,b,c,
